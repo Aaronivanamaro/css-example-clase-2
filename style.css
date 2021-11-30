@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Configuraciones Generales */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Menu fijo superior */
+header {
+    background-color: rgb(150, 230, 203);
+    height: 65px;
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header * {
+    display: inline;
+}
+.logo {
+    margin: 20px;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Comforter Brush', cursive;
+}
+li {
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgba(41, 38, 38);
+    font-size: 20px;
+    padding: 15px;
+}
+a:hover,
+.menu-options:hover a {
+    background-color: rgb(122, 200, 174);
+    font-weight: 700;
+}
+
+/* Sub Menú */
+.menu-options {
+    position: relative;
+}
+.menu-options:hover .sub-menu{
+    display: flex;
+}
+.sub-menu {
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    padding-left: 0;
+    background-color: rgb(122, 200, 174);
+    padding-right: 2px;
+    display: none;
+}
+
+
+/* Sección Principal */
+
+/* Section similar a Bitcoin */
+
+#bitcoin-section {
+    background-color: #13161f;
+}
+.flex-container {
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 950px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-items {
+    background-color: #090c14;
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+}
+.flex-items img {
+    max-width: 20%;
+}
+.text-content h4 {
+    color: #fefefe;
+    font-weight: 400;
+    font-size: 20px;
+}
+.text-content p {
+    color: #c5c2c2
+}
+
+/* Flex */
+/* #flex-test {
+    height: 400px;
+    width: 100%;
+    background-color: #cc9357;
+}
+.flex-container {
+    background-color: cadetblue;
+    height: 300px;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-items {
+    background-color: tomato;
+    margin: 10px;
+    width: 150px;
+} */
+
+/* Resto del contenido */
+main {
+    margin-top: 65px;
+}
+.sections {
+    width: 1000px;
+    margin: 0 auto;
+}
+#special-section {
+    background-image: url(./assests/images/sitios-web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h2 {
+    text-align: center;
+    color: #cc9357;
+}
+p {
+    font-weight: 300;
+}
